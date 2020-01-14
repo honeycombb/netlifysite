@@ -6,15 +6,16 @@
 
 <section>
 	{{ range .CurrentSection.Pages }}
-	<p>
+	<div class="card">
 		<a href="{{ .RelPermalink }}">
 		{{ .Title }} 
-		{{ if .Date }}
-			---- 
-			{{ .Date.Format "02-01-2006" }}
-		{{end}}
-		</a>
-	</p>
+		</a><br>
+		{{ if .Param "summary" }}
+			<p>
+				{{ .Param "summary" }}
+			</p>
+		{{ end }}
+	</div>
 	{{ end }}
 </section>
 {{ end }}

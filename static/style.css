@@ -8,10 +8,12 @@
 }
 
 * {
+	vertical-align:center;
 	text-align:center;
 	font-family:monospace;
 	cursor:url("/cursors/cursor.cur"),auto;
-	padding:2px;
+	padding:4px;
+	margin:2px;
 }
 
 body {
@@ -22,12 +24,6 @@ body {
 header {
 	background-color:var(--li);
 	border:2px solid var(--acc);
-}
-
-nav * {
-	list-style:none;
-	display:inline;
-	width:15%;
 }
 
 main {
@@ -41,15 +37,30 @@ footer {
 }
 
 button {
+	min-width:100px;
+	width:15%;
 	background-color:var(--hi);
+	color:var(--dark);
 	border:2px solid var(--acc);
 	cursor:url("/cursors/cursor-link.ani"),auto;
+	font-weight:bold;
+	font-style:italic;
+}
+
+@media only screen and (max-width:400px) {
+	button {
+		width:100%;
+	}
 }
 
 a {
 	text-decoration:none;
 	cursor:url("/cursors/cursor-link.ani"),auto;
-	color:blue;
+	color:var(--hi);
 	font-weight:bold;
-	text-shadow:1px 1px 6px white;
+	text-shadow:1px 1px 4px var(--dark);
+}
+
+.card {
+	border:dotted 2px var(--acc);
 }

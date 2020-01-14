@@ -5,11 +5,11 @@
 		</h2>
 	<section>
 		{{- .Content -}}
-		<time>
-			{{ if .Date }}
-			{{ .Date.Format "02-01-2006" }}
-			{{end}}
-		</time>
+		{{ if .Date }}
+			<time>
+				{{ .Date.Format "02-01-2006" }}
+			</time>
+		{{end}}
 	</section>
 </article>
 {{ end }}

@@ -1,13 +1,9 @@
 {{ with .Site.Menus.main }}
-	<ul>
-		{{ range . }}
-		<li>
-			<a href="{{ .URL | relURL }}">
-				<button>
-					{{ .Name }}
-				</button>
-			</a>
-		</li>
-		{{ end }}
-	</ul>
+	{{ range . }}
+		<a href="{{ .URL | relURL }}">
+			<button>
+				{{ .Name }}
+			</button>
+		</a>
+	{{ end }}
 {{ end }}
