@@ -1,0 +1,55 @@
+
+:root {
+  --li: #ece;
+  --mid: #088;
+  --dark: #759;
+  --hi: #9fd;
+  --acc: #faf;
+}
+
+* {
+	text-align:center;
+	font-family:monospace;
+	cursor:url("/cursors/cursor.cur"),auto;
+	padding:2px;
+}
+
+body {
+	background-color:var(--mid);
+	color:var(--dark);
+}
+
+header {
+	background-color:var(--li);
+	border:2px solid var(--acc);
+}
+
+nav * {
+	list-style:none;
+	display:inline;
+	width:15%;
+}
+
+main {
+	background-color:var(--li);
+	border:2px solid var(--acc);
+}
+
+footer {
+	background-color:var(--li);
+	border:2px solid var(--acc);
+}
+
+button {
+	background-color:var(--hi);
+	border:2px solid var(--acc);
+	cursor:url("/cursors/cursor-link.ani"),auto;
+}
+
+a {
+	text-decoration:none;
+	cursor:url("/cursors/cursor-link.ani"),auto;
+	color:blue;
+	font-weight:bold;
+	text-shadow:1px 1px 6px white;
+}

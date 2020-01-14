@@ -1,0 +1,12 @@
+
+<title>{{ .Site.Title }} | {{ .Page.Title }}</title>
+
+<link rel="stylesheet" href="{{ "style.css" | relURL }}">
+{{ with .Site.Params.description }}
+	<meta name="description" content="{{ . }}">
+{{ end }}
+{{ with .Site.Params.author }}
+	<meta name="author" content="{{ . }}">
+{{ end }}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">

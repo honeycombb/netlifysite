@@ -1,4 +1,39 @@
 baseURL = "http://honeycombb.netlify.com/"
 languageCode = "en-us"
 title = "BryZone"
-theme = "mytheme"
+
+[params]
+  author = "Bryan Sźpyłek"
+  description = "description of site here"
+  email = "eons.of.dazzle@gmail.com"
+  masto = "https://todon.nl/@nohomosuperior"
+
+
+[permalinks]
+  blog = "/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = "1"
+  [[menu.main]]
+    name = "About"
+    url = "/page/about"
+    weight = "2"
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = "3"
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = "4"
+  [[menu.main]]
+    name = "Contact"
+    url = "/page/contact"
+    weight = "6"
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = "5"

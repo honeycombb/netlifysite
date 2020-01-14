@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+		<h2>
+			{{- .Title -}}
+		</h2>
+	<section>
+		{{- .Content -}}
+		<time>
+			{{ if .Date }}
+			{{ .Date.Format "02-01-2006" }}
+			{{end}}
+		</time>
+		<span id="post_tags">
+		{{ range .Param "tags" }}
+			{{ $name := . }}
+				{{ with $.Site.GetPage (printf "/%s/%s" "tags" ($name | urlize)) }}
+				<a href="{{ .Permalink }}">
+					#{{ $name }} 
+				</a>
+				{{ end }}
+			{{ end }}
+		</span>
+	</section>
+</article>
+{{ end }}
