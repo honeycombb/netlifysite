@@ -33,7 +33,3 @@ title = "BryZone"
     name = "Contact"
     url = "/page/contact"
     weight = "6"
-  [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = "5"
