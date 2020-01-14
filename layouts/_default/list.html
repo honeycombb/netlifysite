@@ -14,17 +14,6 @@
 			{{ .Date.Format "02-01-2006" }}
 		{{end}}
 		</a>
-
-		<span id="post_tags">
-			{{ range .Param "tags" }}
-			{{ $name := . }}
-			{{ with $.Site.GetPage (printf "/%s/%s" "tags" ($name | urlize)) }}
-			<a href="{{ .Permalink }}">
-			#{{ $name }} 
-			</a>
-			{{ end }}
-			{{ end }}
-		</span>
 	</p>
 	{{ end }}
 </section>
