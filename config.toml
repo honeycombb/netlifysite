@@ -1,6 +1,7 @@
 baseURL = "http://honeycombb.netlify.com/"
 languageCode = "en-us"
 title = "BryZone"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   author = "Bryan Sźpyłek"
